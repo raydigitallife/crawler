@@ -1,12 +1,17 @@
-# 參考
+# 根據網路上資料實作 demo.py
+
 <https://www.jamleecute.com/python-web-crawler-beautifulsoup-%E7%B6%B2%E8%B7%AF%E7%88%AC%E8%9F%B2/>
 
-## 目前測試只能用 python2.7 執行
-python demo-ok.py
+## 產出安裝文件，主要用作在python的函式庫
 
-## 產出安裝文件
-pip freeze > requirements.txt
+pip freeze > requirements.txt   
+但產出的並非都是需要的，而是套件相依性本身已經安裝的，但可當作參考價值
 
 ## 包裝 docker images
 
-還在測試
+ubuntu-python27.dockerfile
+
+## 使用方式，目前只能用 python2.7 執，
+
+docker run `your-docker-images` python demo.py   
+demo.py 要依附在 container 內   
