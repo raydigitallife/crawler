@@ -17,6 +17,6 @@ ubuntu-python3.dockerfile
 docker run `your-docker-images` python demo.py   
 demo.py 要依附在 container 內   
 
-## 使用方式,python3
+## 使用方式,python36
 docker run `your-docker-images` python3 demo.py   
 demo.py 要依附在 container 內   
