@@ -32,10 +32,14 @@ df = pd.DataFrame(
 df.head()
 
 import os
+import boto3
 
-# the file name with path
 path = os.getcwd()
 dt2 = now.strftime("%Y%m%d_v%H%M")
-filename = os.path.join(path,'ppt_pop_{}.csv'.format(dt2))
+filename = ('ppt_pop_{}.csv'.format(dt2))
 df.to_csv(filename)
 print (filename)
+
+# Upload to Amazon S3 with filename no path
+s3 = boto3.resource('s3')
+s3.meta.client.upload_file(filename, 'ray-test-only-data', filename)

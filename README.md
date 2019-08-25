@@ -10,7 +10,7 @@ pip freeze > requirements.txt
 ## 包裝 docker images
 
 ubuntu-python27.dockerfile
-ubuntu-python3.dockerfile
+ubuntu-python36.dockerfile
 
 ## 使用方式,python27
 
