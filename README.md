@@ -11,7 +11,7 @@ pip freeze > requirements.txt
 
 ubuntu-python27.dockerfile
 
-## 使用方式，目前只能用 python2.7 執，
+## 使用方式
 
 docker run `your-docker-images` python demo.py   
 demo.py 要依附在 container 內   
