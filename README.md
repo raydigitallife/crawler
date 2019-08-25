@@ -10,8 +10,13 @@ pip freeze > requirements.txt
 ## 包裝 docker images
 
 ubuntu-python27.dockerfile
+ubuntu-python3.dockerfile
 
-## 使用方式
+## 使用方式,python27
 
 docker run `your-docker-images` python demo.py   
+demo.py 要依附在 container 內   
+
+## 使用方式,python3
+docker run `your-docker-images` python3 demo.py   
 demo.py 要依附在 container 內   
