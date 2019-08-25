@@ -1,7 +1,7 @@
 From ubuntu
 RUN apt-get update
 RUN apt-get install python-pip -y
-RUN pip install lxml wheel requests pandas beautifulsoup4
+RUN pip install lxml wheel requests pandas beautifulsoup4 boto3
 
 COPY demo.py demo2.py /
 
